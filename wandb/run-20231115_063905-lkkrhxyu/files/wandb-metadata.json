@@ -1,0 +1,102 @@
+{
+    "os": "Linux-5.15.120+-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "heartbeatAt": "2023-11-15T06:39:11.779506",
+    "startedAt": "2023-11-15T06:39:05.098871",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "Project5_main.ipynb",
+    "codePathLocal": "Project5_main.ipynb",
+    "colab": "https://colab.research.google.com/notebook#fileId=1_yUDqTU25LApcyDYAuex3XfTbws_MZQu",
+    "host": "22363a725695",
+    "username": "root",
+    "executable": "/usr/bin/python3",
+    "cpu_count": 6,
+    "cpu_count_logical": 12,
+    "cpu_freq": {
+        "current": 2200.146,
+        "min": 0.0,
+        "max": 0.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2200.146,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2200.146,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2200.146,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2200.146,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2200.146,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2200.146,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2200.146,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2200.146,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2200.146,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2200.146,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2200.146,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2200.146,
+            "min": 0.0,
+            "max": 0.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 166.77415084838867,
+            "used": 26.836681365966797
+        }
+    },
+    "gpu": "NVIDIA A100-SXM4-40GB",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA A100-SXM4-40GB",
+            "memory_total": 42949672960
+        }
+    ],
+    "memory": {
+        "total": 83.48070526123047
+    }
+}

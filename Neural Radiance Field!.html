@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Neural Radiance Field!</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link href="styles/style.css" rel="stylesheet" type="text/css" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+      }
+
+      h1 {
+        font-family: "Kaushan Script", cursive;
+        text-align: center;
+        color: #333;
+      }
+
+      h2 {
+        color: #555;
+      }
+
+      p {
+        color: #777;
+        line-height: 1.4;
+        text-align: center; /* Center paragraphs */
+        max-width: 800px; /* Limit paragraph width */
+        margin: 20px; /* Add margin to paragraphs */
+      }
+
+      .container {
+        display: flex;
+        justify-content: space-between;
+        margin: 20px;
+      }
+
+      .imgContainer {
+        text-align: center;
+      }
+
+      .imgContainer h3 {
+        color: #444;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+        border: 1px solid #ddd;
+        padding: 5px;
+        background-color: #fff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      li {
+        color: #666;
+      }
+    </style>
+  </head>
+  <body>
+    <html>
+      <head>
+        <meta charset="utf-8" />
+        <title>Neural Radiance Field!</title>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap"
+          rel="stylesheet"
+        />
+        <link href="styles/style.css" rel="stylesheet" type="text/css" />
+      </head>
+      <body>
+        <h1>
+          Neural Radiance Field!
+        </h1>
+        <h3>Claire Ding</h3>
+
+        <h2>Part 1: Fit a Neural Field to a 2D Image</h2>
+
+        <h3>Neural Network Implementation</h3>
+        <p>
+          We first implementated a Multilayer Perceptron (MLP) network with Sinusoidal Positional Encoding (PE) that takes in the 2-dim pixel coordinates, and output the 3-dim pixel color. I used the standard structure, with three layers of Linear and three layers of ReLU and one layer of sigmoid.
+        </p>
+
+        <h3>Dataloader</h3>
+        <p>Since the image is with high resolution, it is not feasible train the network with the all the pixels in every iteration due to the GPU memory limit. Therefore, we implemented a dataloader that randomly sample 
+          N pixels at every iteration for training. The dataloader is expected to return both the 2D coordinates and 3D colors of the pixels, which will serve as the input to the neural network, and the supervision target, respectively.</p>
+
+        <h3>Hyperparameter Tuning</h3>
+        <p>
+          In order to achieve the best results, we tuned hyperparameter such as number of layers, channel size, max frequency L for the positional encoding, or learning rate.
+          Some extreme hyperparameter I've chosen are L = 3 and learning rate = 0.5.
+          Below are the results for each of them respectively. We can see that when L = 3, the coordinates don't have enough positional encoding to accurately output the result image; whereas when the learning is as large as 0.5, the loss is consistent as 22% and it overshoots and therefore can't find the minimum.
+        </p>
+        <div class="container">
+          <div class="imgContainer">
+            <h3>Original</h3>
+            <img
+              src="fox.jpeg"
+              alt="emir_g_edges.jpeg"
+              width="400"
+            />
+          </div>
+          <div class="imgContainer">
+            <h3>L = 3</h3>
+            <img
+              src="fox_L_3.jpeg"
+              alt="emir_g_edges.jpeg"
+              width="400"
+            />
+          </div>
+
+          <div class="imgContainer">
+            <h3>Learning rate = 0.5</h3>
+            <img
+              src="fox_learning_rate_0.5.jpeg"
+              alt="emir_r_edges.jpeg"
+              width="400"
+            />
+          </div>
+        </div>
+
+        <p>Therefore, the hyperparameter I chose are: L = 10, N = 10k, learning rate = 1e-2, num_epochs = 1000, although result below are achieved within 2 epochs.</p>
+        <div class="container">
+          <div class="imgContainer">
+            <img
+              src="fox5.jpeg"
+              alt="emir_g_edges.jpeg"
+              width="400"
+            />
+          </div>
+          <div class="imgContainer">
+            <img
+              src="fox4.jpeg"
+              alt="emir_g_edges.jpeg"
+              width="400"
+            />
+          </div>
+
+          <div class="imgContainer">
+            <img
+              src="fox3.jpeg"
+              alt="emir_g_edges.jpeg"
+              width="400"
+            />
+          </div>
+          <div class="imgContainer">
+            <img
+              src="fox2.jpeg"
+              alt="emir_g_edges.jpeg"
+              width="400"
+            />
+          </div>
+          <div class="imgContainer">
+            <img
+              src="fox1.jpeg"
+              alt="emir_g_edges.jpeg"
+              width="400"
+            />
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="imgContainer">
+            <h3>PSNR graph</h3>
+            <img
+              src="fox_psnr.jpeg"
+              alt="emir_g_edges.jpeg"
+              width="500"
+            />
+          </div>
+        
+          <div class="imgContainer">
+            <h3>loss graph</h3>
+            <img
+              src="fox_loss.jpeg"
+              alt="emir_g_edges.jpeg"
+              width="500"
+            />
+          </div>
+        </div>
+        <h3>And here is another random image I found online and used the same Neural Network and hyperparameter to train. Here are the results:</h3>
+        <div class="container">
+          <div class="imgContainer">
+            <h3>Original image</h3>
+            <img
+              src="random.jpeg"
+              alt="emir_g_edges.jpeg"
+              width="400"
+            />
+          </div>
+        </div>
+        <div class ="container">
+          <div class="imgContainer">
+            <img
+              src="random_4.jpeg"
+              alt="emir_g_edges.jpeg"
+              width="300"
+            />
+          </div>
+
+          <div class="imgContainer">
+            <img
+              src="random_3.jpeg"
+              alt="emir_g_edges.jpeg"
+              width="300"
+            />
+          </div>
+          <div class="imgContainer">
+            <img
+              src="random_2.jpeg"
+              alt="emir_g_edges.jpeg"
+              width="300"
+            />
+          </div>
+
+          <div class="imgContainer">
+            <img
+              src="random_0.jpeg"
+              alt="emir_g_edges.jpeg"
+              width="300"
+            />
+          </div>
+        </div>
+        <div class="container">
+          <div class="imgContainer">
+            <h3>PSNR graph</h3>
+            <img
+              src="random_psnr.jpeg"
+              alt="emir_g_edges.jpeg"
+              width="500"
+            />
+          </div>
+        
+          <div class="imgContainer">
+            <h3>loss graph</h3>
+            <img
+              src="random_loss.jpeg"
+              alt="emir_g_edges.jpeg"
+              width="500"
+            />
+          </div>
+        </div>
+        </div>
+        <h2>Part 2: Fit a Neural Radiance Field from Multi-view Images</h2>
+        <h3>
+          In this part, we are using a neural radiance field to represent a 3D space, <br/>through inverse rendering from multi-view calibrated images. We are using the lego image from the original NeRF paper.
+        </h3>
+
+        <p></p>
+        <h3>Create Rays from Cameras:</h3>
+        <p>
+          In order to create rays from cameras, we implemented three helper functions: transform, pixel_to_ray, and pixel_to_camera.
+          <br/>The transformation between the world space Xw(xw, yw, zw) and the camera coordinates Xc(xc, yc, zc) can be defined as a rotation matrix R and a translation vector. We use the rotation matrix and vector to construct the world to camera transformation matrix, and we took the inverse of it to construct the camera to world matrix. The function trnsform takes in the camera to world matrix and the camera coordinates x_c and computed the world coordinates.
+          <br/>The intrinsic matrix K is constructed by focal length (fx, fy) and principal point (ox = image_width / 2, oy = image_height/2). We use this intrinsic matrix to project a 3D point in the camera coordinate system to a 2D location (u,v) in pixel coordinates. Since we know that s * [u,v,1].T = K * [x_c, y_c, z_c].T, in which s = z_c is the depth of this point along the optical axis. Therefore, we can get the camera coordinates from the pixel coordinates by dot product the inverse of intrinsic matrix with pixel coordinates and then multiply with the depth, which is the output of pixel_to_camera function.
+          Each ray is defined by a origin vector r_o and direction vector r_d. In the case of pinhole camera, we know that origin r_o is just the location of the camera, which can be computed as -R^-1 * t.
+          Ray direction, on the other hand, is by finding a point in the world sapce along the ray with depth equals 1, and the normalized ray direction can be computed by (Xw-r_o)/norm(Xw-r_o). 
+
+        </p>
+        <h3>Sampling</h3>
+        <p>We first implemented a function that sample rays from our image dataset. Since we have multiple images now, we first sample M images, then sample N//M rays from every image to construct a total sample of N rays. After randomly sample M images, a mask is created by randomly sampled N//M uv coordinates. We extract the pixel colors corresponded to these uv coordinates, and we get the ray of these uv coordinates by using pixel_to_ray helper function we defined before. One thing to note is that the offset from image coordinates center to pixel center is 0.5, so we need to account for that as well.
+          <br/> We then uniformly sampled points along rays. The 3D coordinates can be acquire by x = R_o + R_d * t. In order to avoid overfitting, we introduce small perturbation to points during training stage. I sampled 64 points along each ray. </p>
+        <p> Like part 1, we also need to write a dataloader that randomly sample pixels from multiview image. </p>
+        <div class="imgContainer">
+          <h3>Rendered 100 rays</h3>
+          <img
+            src="render100rays.jpeg"
+            alt="emir_g_edges.jpeg"
+            width="1000"
+          />
+        </div>
+        <h3>Neural Radiance Field</h3>
+        <p>
+          To construct a neural network that can convert 3d world coordinates and ray direction to pixels, we need to build a neural network thats deeper than the one we have from part 1. Therefore, I used the standard structure provided to me with 12 linear layer, multiple ReLu, and two concatenation with the PE of x coordinates and ray_d in the middle of MLP. We want two output, 1d density and 3d rgb vectors. In other words, we not only want the color, but also the density for the 3D points.
+        </p>
+        <img src = "mlp_nerf.jpeg" width = 450/>
+        <p>The volume rendering function is below. This fundamentally means that at every small step dt along the ray, we add the contribution of that small interval 
+[t,t+dt] to that final color, and we do the infinitely many additions if these infintesimally small intervals with an integral.</p>
+<img src = "volume_rendering.jpeg" width = 400/>
+
+        <p></p>
+
+        <h3>Validation Sets</h3>
+        <!-- <img src="images/edges_emir.jpeg" alt="edges_emir.jpeg" width=800> -->
+        <div class="container">
+          <div class="imgContainer">
+            
+            <img
+              src="truck99_0.jpeg"
+              alt="emir_g_edges.jpeg"
+              width="300"
+            />
+          </div>
+
+          <div class="imgContainer">
+           
+            <img
+              src="truck299_0.jpeg"
+              alt="emir_r_edges.jpeg"
+              width="300"
+            />
+          </div>
+          <div class="imgContainer">
+      
+            <img
+              src="truck499_0.jpeg"
+              alt="emir_r_edges.jpeg"
+              width="300"
+            />
+          </div>
+          <div class="imgContainer">
+          <img
+          src="truck699_0.jpeg"
+          alt="emir_r_edges.jpeg"
+          width="300"
+        />
+      </div>
+      <div class="imgContainer">
+      <img
+      src="truck799_0.jpeg"
+      alt="emir_r_edges.jpeg"
+      width="300"
+    />
+  </div>
+<div class="imgContainer">
+<img
+src="truck999_0.jpeg"
+alt="emir_r_edges.jpeg"
+width="300"
+/>
+</div>
+        </div>
+
+
+        <div class="container">
+          <div class="imgContainer">
+            
+            <img
+              src="truck99_1.jpeg"
+              alt="emir_g_edges.jpeg"
+              width="300"
+            />
+          </div>
+
+          <div class="imgContainer">
+           
+            <img
+              src="truck299_1.jpeg"
+              alt="emir_r_edges.jpeg"
+              width="300"
+            />
+          </div>
+          <div class="imgContainer">
+      
+            <img
+              src="truck499_1.jpeg"
+              alt="emir_r_edges.jpeg"
+              width="300"
+            />
+          </div>
+          <div class="imgContainer">
+          <img
+          src="truck699_1.jpeg"
+          alt="emir_r_edges.jpeg"
+          width="300"
+        />
+      </div>
+      <div class="imgContainer">
+      <img
+      src="truck799_1.jpeg"
+      alt="emir_r_edges.jpeg"
+      width="300"
+    />
+  </div>
+<div class="imgContainer">
+<img
+src="truck999_1.jpeg"
+alt="emir_r_edges.jpeg"
+width="300"
+/>
+</div>
+</div>
+
+<div class="container">
+  <div class="imgContainer">
+    
+    <img
+      src="truck99_2.jpeg"
+      alt="emir_g_edges.jpeg"
+      width="300"
+    />
+  </div>
+
+  <div class="imgContainer">
+   
+    <img
+      src="truck299_2.jpeg"
+      alt="emir_r_edges.jpeg"
+      width="300"
+    />
+  </div>
+  <div class="imgContainer">
+
+    <img
+      src="truck499_2.jpeg"
+      alt="emir_r_edges.jpeg"
+      width="300"
+    />
+  </div>
+  <div class="imgContainer">
+  <img
+  src="truck699_2.jpeg"
+  alt="emir_r_edges.jpeg"
+  width="300"
+/>
+</div>
+<div class="imgContainer">
+<img
+src="truck799_2.jpeg"
+alt="emir_r_edges.jpeg"
+width="300"
+/>
+</div>
+<div class="imgContainer">
+<img
+src="truck999_2.jpeg"
+alt="emir_r_edges.jpeg"
+width="300"
+/>
+</div>
+</div>
+        <div class="container">
+          <div class="imgContainer">
+            
+            <img
+              src="truck99_3.jpeg"
+              alt="emir_g_edges.jpeg"
+              width="300"
+            />
+          </div>
+
+          <div class="imgContainer">
+           
+            <img
+              src="truck299_3.jpeg"
+              alt="emir_r_edges.jpeg"
+              width="300"
+            />
+          </div>
+          <div class="imgContainer">
+      
+            <img
+              src="truck499_3.jpeg"
+              alt="emir_r_edges.jpeg"
+              width="300"
+            />
+          </div>
+          <div class="imgContainer">
+          <img
+          src="truck699_3.jpeg"
+          alt="emir_r_edges.jpeg"
+          width="300"
+        />
+      </div>
+      <div class="imgContainer">
+      <img
+      src="truck799_3.jpeg"
+      alt="emir_r_edges.jpeg"
+      width="300"
+    />
+  </div>
+<div class="imgContainer">
+<img
+src="truck999_3.jpeg"
+alt="emir_r_edges.jpeg"
+width="300"
+/>
+</div>
+        </div>
+        <div class="container">
+          <div class="imgContainer">
+            
+            <img
+              src="truck99_4.jpeg"
+              alt="emir_g_edges.jpeg"
+              width="300"
+            />
+          </div>
+
+          <div class="imgContainer">
+           
+            <img
+              src="truck299_4.jpeg"
+              alt="emir_r_edges.jpeg"
+              width="300"
+            />
+          </div>
+          <div class="imgContainer">
+      
+            <img
+              src="truck499_4.jpeg"
+              alt="emir_r_edges.jpeg"
+              width="300"
+            />
+          </div>
+          <div class="imgContainer">
+          <img
+          src="truck699_4.jpeg"
+          alt="emir_r_edges.jpeg"
+          width="300"
+        />
+      </div>
+      <div class="imgContainer">
+      <img
+      src="truck799_4.jpeg"
+      alt="emir_r_edges.jpeg"
+      width="300"
+    />
+  </div>
+<div class="imgContainer">
+<img
+src="truck999_4.jpeg"
+alt="emir_r_edges.jpeg"
+width="300"
+/>
+</div>
+        </div>
+        <div class="container">
+          <div class="imgContainer">
+            
+            <img
+              src="truck99_5.jpeg"
+              alt="emir_g_edges.jpeg"
+              width="300"
+            />
+          </div>
+
+          <div class="imgContainer">
+           
+            <img
+              src="truck299_5.jpeg"
+              alt="emir_r_edges.jpeg"
+              width="300"
+            />
+          </div>
+          <div class="imgContainer">
+      
+            <img
+              src="truck499_5.jpeg"
+              alt="emir_r_edges.jpeg"
+              width="300"
+            />
+          </div>
+          <div class="imgContainer">
+          <img
+          src="truck699_5.jpeg"
+          alt="emir_r_edges.jpeg"
+          width="300"
+        />
+      </div>
+      <div class="imgContainer">
+      <img
+      src="truck799_5.jpeg"
+      alt="emir_r_edges.jpeg"
+      width="300"
+    />
+  </div>
+<div class="imgContainer">
+<img
+src="truck999_5.jpeg"
+alt="emir_r_edges.jpeg"
+width="300"
+/>
+</div>
+        </div>
+        <div class="container">
+          <div class="imgContainer">
+            
+            <img
+              src="truck99_6.jpeg"
+              alt="emir_g_edges.jpeg"
+              width="300"
+            />
+          </div>
+
+          <div class="imgContainer">
+           
+            <img
+              src="truck299_6.jpeg"
+              alt="emir_r_edges.jpeg"
+              width="300"
+            />
+          </div>
+          <div class="imgContainer">
+      
+            <img
+              src="truck499_6.jpeg"
+              alt="emir_r_edges.jpeg"
+              width="300"
+            />
+          </div>
+          <div class="imgContainer">
+          <img
+          src="truck699_6.jpeg"
+          alt="emir_r_edges.jpeg"
+          width="300"
+        />
+      </div>
+      <div class="imgContainer">
+      <img
+      src="truck799_6.jpeg"
+      alt="emir_r_edges.jpeg"
+      width="300"
+    />
+  </div>
+<div class="imgContainer">
+<img
+src="truck999_6.jpeg"
+alt="emir_r_edges.jpeg"
+width="300"
+/>
+</div>
+</div>
+<div class="container">
+  <div class="imgContainer">
+    
+    <img
+      src="truck99_7.jpeg"
+      alt="emir_g_edges.jpeg"
+      width="300"
+    />
+  </div>
+
+  <div class="imgContainer">
+   
+    <img
+      src="truck299_7.jpeg"
+      alt="emir_r_edges.jpeg"
+      width="300"
+    />
+  </div>
+  <div class="imgContainer">
+
+    <img
+      src="truck499_7.jpeg"
+      alt="emir_r_edges.jpeg"
+      width="300"
+    />
+  </div>
+  <div class="imgContainer">
+  <img
+  src="truck699_7.jpeg"
+  alt="emir_r_edges.jpeg"
+  width="300"
+/>
+</div>
+<div class="imgContainer">
+<img
+src="truck799_7.jpeg"
+alt="emir_r_edges.jpeg"
+width="300"
+/>
+</div>
+<div class="imgContainer">
+<img
+src="truck999_7.jpeg"
+alt="emir_r_edges.jpeg"
+width="300"
+/>
+</div>
+</div>
+</div>
+<div class="container">
+  <div class="imgContainer">
+    
+    <img
+      src="truck99_8.jpeg"
+      alt="emir_g_edges.jpeg"
+      width="300"
+    />
+  </div>
+
+  <div class="imgContainer">
+   
+    <img
+      src="truck299_8.jpeg"
+      alt="emir_r_edges.jpeg"
+      width="300"
+    />
+  </div>
+  <div class="imgContainer">
+
+    <img
+      src="truck499_8.jpeg"
+      alt="emir_r_edges.jpeg"
+      width="300"
+    />
+  </div>
+  <div class="imgContainer">
+  <img
+  src="truck699_8.jpeg"
+  alt="emir_r_edges.jpeg"
+  width="300"
+/>
+</div>
+<div class="imgContainer">
+<img
+src="truck799_8.jpeg"
+alt="emir_r_edges.jpeg"
+width="300"
+/>
+</div>
+<div class="imgContainer">
+<img
+src="truck999_8.jpeg"
+alt="emir_r_edges.jpeg"
+width="300"
+/>
+</div>
+</div>
+</div>
+<div class="container">
+  <div class="imgContainer">
+    
+    <img
+      src="truck99_9.jpeg"
+      alt="emir_g_edges.jpeg"
+      width="300"
+    />
+  </div>
+
+  <div class="imgContainer">
+   
+    <img
+      src="truck299_9.jpeg"
+      alt="emir_r_edges.jpeg"
+      width="300"
+    />
+  </div>
+  <div class="imgContainer">
+
+    <img
+      src="truck499_9.jpeg"
+      alt="emir_r_edges.jpeg"
+      width="300"
+    />
+  </div>
+  <div class="imgContainer">
+  <img
+  src="truck699_9.jpeg"
+  alt="emir_r_edges.jpeg"
+  width="300"
+/>
+</div>
+<div class="imgContainer">
+<img
+src="truck799_9.jpeg"
+alt="emir_r_edges.jpeg"
+width="300"
+/>
+</div>
+<div class="imgContainer">
+<img
+src="truck999_9.jpeg"
+alt="emir_r_edges.jpeg"
+width="300"
+/>
+</div>
+</div>
+
+<div class="container">
+  <div class="imgContainer">
+    <h3>PSNR graph</h3>
+    <img
+      src="lego_psnr.jpeg"
+      alt="emir_g_edges.jpeg"
+      width="500"
+    />
+  </div>
+
+  <div class="imgContainer">
+    <h3>loss graph</h3>
+    <img
+      src="lego_eval_loss.jpeg"
+      alt="emir_g_edges.jpeg"
+      width="500"
+    />
+  </div>
+</div>
+
+
+        <h2>Final Rendered Result</h2>
+        
+
+       
+        <img src="lego.gif" width = 500 />
+       
+      </body>
+    </html>
+  </body>
+</html>

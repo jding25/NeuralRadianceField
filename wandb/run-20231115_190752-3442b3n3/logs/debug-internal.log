@@ -1,0 +1,1262 @@
+2023-11-15 19:07:52,617 INFO    StreamThr :1948 [internal.py:wandb_internal():86] W&B internal server running at pid: 1948, started at: 2023-11-15 19:07:52.613909
+2023-11-15 19:07:52,619 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: status
+2023-11-15 19:07:57,623 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: status_report
+2023-11-15 19:07:57,623 INFO    WriterThread:1948 [datastore.py:open_for_write():85] open: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/run-3442b3n3.wandb
+2023-11-15 19:07:57,660 DEBUG   SenderThread:1948 [sender.py:send():380] send: header
+2023-11-15 19:07:57,665 DEBUG   SenderThread:1948 [sender.py:send():380] send: run
+2023-11-15 19:07:58,695 INFO    SenderThread:1948 [dir_watcher.py:__init__():211] watching files in: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files
+2023-11-15 19:07:58,695 INFO    SenderThread:1948 [sender.py:_start_run_threads():1124] run started: 3442b3n3 with start time 1700075272.613416
+2023-11-15 19:07:58,719 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: check_version
+2023-11-15 19:07:58,719 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: check_version
+2023-11-15 19:07:58,853 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: run_start
+2023-11-15 19:07:58,854 DEBUG   HandlerThread:1948 [system_info.py:__init__():32] System info init
+2023-11-15 19:07:58,854 DEBUG   HandlerThread:1948 [system_info.py:__init__():47] System info init done
+2023-11-15 19:07:58,854 INFO    HandlerThread:1948 [system_monitor.py:start():194] Starting system monitor
+2023-11-15 19:07:58,854 INFO    SystemMonitor:1948 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2023-11-15 19:07:58,855 INFO    HandlerThread:1948 [system_monitor.py:probe():214] Collecting system info
+2023-11-15 19:07:58,855 INFO    SystemMonitor:1948 [interfaces.py:start():190] Started cpu monitoring
+2023-11-15 19:07:58,856 INFO    SystemMonitor:1948 [interfaces.py:start():190] Started disk monitoring
+2023-11-15 19:07:58,857 INFO    SystemMonitor:1948 [interfaces.py:start():190] Started gpu monitoring
+2023-11-15 19:07:58,857 INFO    SystemMonitor:1948 [interfaces.py:start():190] Started memory monitoring
+2023-11-15 19:07:58,858 INFO    SystemMonitor:1948 [interfaces.py:start():190] Started network monitoring
+2023-11-15 19:07:58,864 DEBUG   HandlerThread:1948 [system_info.py:probe():196] Probing system
+2023-11-15 19:07:58,867 DEBUG   HandlerThread:1948 [gitlib.py:_init_repo():56] git repository is invalid
+2023-11-15 19:07:58,867 DEBUG   HandlerThread:1948 [system_info.py:probe():244] Probing system done
+2023-11-15 19:07:58,867 DEBUG   HandlerThread:1948 [system_monitor.py:probe():223] {'os': 'Linux-5.15.120+-x86_64-with-glibc2.35', 'python': '3.10.12', 'heartbeatAt': '2023-11-15T19:07:58.864313', 'startedAt': '2023-11-15T19:07:52.548947', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': 'Project5_main.ipynb', 'codePathLocal': 'Project5_main.ipynb', 'colab': 'https://colab.research.google.com/notebook#fileId=1_yUDqTU25LApcyDYAuex3XfTbws_MZQu', 'host': 'c628cfe50fc2', 'username': 'root', 'executable': '/usr/bin/python3', 'cpu_count': 4, 'cpu_count_logical': 8, 'cpu_freq': {'current': 2000.1499999999999, 'min': 0.0, 'max': 0.0}, 'cpu_freq_per_core': [{'current': 2000.15, 'min': 0.0, 'max': 0.0}, {'current': 2000.15, 'min': 0.0, 'max': 0.0}, {'current': 2000.15, 'min': 0.0, 'max': 0.0}, {'current': 2000.15, 'min': 0.0, 'max': 0.0}, {'current': 2000.15, 'min': 0.0, 'max': 0.0}, {'current': 2000.15, 'min': 0.0, 'max': 0.0}, {'current': 2000.15, 'min': 0.0, 'max': 0.0}, {'current': 2000.15, 'min': 0.0, 'max': 0.0}], 'disk': {'/': {'total': 166.77415084838867, 'used': 26.857791900634766}}, 'gpu': 'Tesla T4', 'gpu_count': 1, 'gpu_devices': [{'name': 'Tesla T4', 'memory_total': 16106127360}], 'memory': {'total': 50.99726104736328}}
+2023-11-15 19:07:58,868 INFO    HandlerThread:1948 [system_monitor.py:probe():224] Finished collecting system info
+2023-11-15 19:07:58,868 INFO    HandlerThread:1948 [system_monitor.py:probe():227] Publishing system info
+2023-11-15 19:07:58,868 DEBUG   HandlerThread:1948 [system_info.py:_save_pip():52] Saving list of pip packages installed into the current environment
+2023-11-15 19:07:58,872 DEBUG   HandlerThread:1948 [system_info.py:_save_pip():68] Saving pip packages done
+2023-11-15 19:07:58,875 INFO    HandlerThread:1948 [system_monitor.py:probe():229] Finished publishing system info
+2023-11-15 19:07:58,876 DEBUG   SenderThread:1948 [sender.py:send():380] send: files
+2023-11-15 19:07:58,876 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-metadata.json with policy now
+2023-11-15 19:07:58,897 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-15 19:07:58,898 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: stop_status
+2023-11-15 19:07:58,938 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-15 19:07:58,938 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: pause
+2023-11-15 19:07:58,939 INFO    HandlerThread:1948 [handler.py:handle_request_pause():705] stopping system metrics thread
+2023-11-15 19:07:58,939 INFO    HandlerThread:1948 [system_monitor.py:finish():203] Stopping system monitor
+2023-11-15 19:07:58,939 DEBUG   SystemMonitor:1948 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2023-11-15 19:07:58,939 INFO    HandlerThread:1948 [interfaces.py:finish():202] Joined cpu monitor
+2023-11-15 19:07:58,940 DEBUG   SystemMonitor:1948 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2023-11-15 19:07:58,940 INFO    HandlerThread:1948 [interfaces.py:finish():202] Joined disk monitor
+2023-11-15 19:07:58,940 DEBUG   SystemMonitor:1948 [system_monitor.py:_start():183] Publishing last batch of metrics
+2023-11-15 19:07:58,946 INFO    HandlerThread:1948 [interfaces.py:finish():202] Joined gpu monitor
+2023-11-15 19:07:58,947 INFO    HandlerThread:1948 [interfaces.py:finish():202] Joined memory monitor
+2023-11-15 19:07:58,947 INFO    HandlerThread:1948 [interfaces.py:finish():202] Joined network monitor
+2023-11-15 19:07:59,183 DEBUG   SenderThread:1948 [sender.py:send():380] send: telemetry
+2023-11-15 19:07:59,183 DEBUG   SenderThread:1948 [sender.py:send():380] send: stats
+2023-11-15 19:07:59,454 INFO    wandb-upload_0:1948 [upload_job.py:push():131] Uploaded file /tmp/tmpyjnxegfkwandb/dz1um63c-wandb-metadata.json
+2023-11-15 19:07:59,700 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_created():271] file/dir created: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/requirements.txt
+2023-11-15 19:07:59,701 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_created():271] file/dir created: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-metadata.json
+2023-11-15 19:08:03,184 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: status_report
+2023-11-15 19:08:08,185 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: status_report
+2023-11-15 19:08:13,185 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: status_report
+2023-11-15 19:08:13,896 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-15 19:08:13,897 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: stop_status
+2023-11-15 19:08:13,937 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-15 19:08:19,171 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: status_report
+2023-11-15 19:08:20,760 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: resume
+2023-11-15 19:08:20,760 INFO    HandlerThread:1948 [handler.py:handle_request_resume():696] starting system metrics thread
+2023-11-15 19:08:20,760 INFO    HandlerThread:1948 [system_monitor.py:start():194] Starting system monitor
+2023-11-15 19:08:20,761 INFO    SystemMonitor:1948 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2023-11-15 19:08:20,761 INFO    SystemMonitor:1948 [interfaces.py:start():190] Started cpu monitoring
+2023-11-15 19:08:20,762 INFO    SystemMonitor:1948 [interfaces.py:start():190] Started disk monitoring
+2023-11-15 19:08:20,763 INFO    SystemMonitor:1948 [interfaces.py:start():190] Started gpu monitoring
+2023-11-15 19:08:20,764 INFO    SystemMonitor:1948 [interfaces.py:start():190] Started memory monitoring
+2023-11-15 19:08:20,765 INFO    SystemMonitor:1948 [interfaces.py:start():190] Started network monitoring
+2023-11-15 19:08:20,801 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: pause
+2023-11-15 19:08:20,801 INFO    HandlerThread:1948 [handler.py:handle_request_pause():705] stopping system metrics thread
+2023-11-15 19:08:20,801 INFO    HandlerThread:1948 [system_monitor.py:finish():203] Stopping system monitor
+2023-11-15 19:08:20,801 INFO    HandlerThread:1948 [interfaces.py:finish():202] Joined cpu monitor
+2023-11-15 19:08:20,801 DEBUG   SystemMonitor:1948 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2023-11-15 19:08:20,802 INFO    HandlerThread:1948 [interfaces.py:finish():202] Joined disk monitor
+2023-11-15 19:08:20,802 DEBUG   SystemMonitor:1948 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2023-11-15 19:08:20,802 DEBUG   SystemMonitor:1948 [system_monitor.py:_start():183] Publishing last batch of metrics
+2023-11-15 19:08:20,808 INFO    HandlerThread:1948 [interfaces.py:finish():202] Joined gpu monitor
+2023-11-15 19:08:20,808 INFO    HandlerThread:1948 [interfaces.py:finish():202] Joined memory monitor
+2023-11-15 19:08:20,809 INFO    HandlerThread:1948 [interfaces.py:finish():202] Joined network monitor
+2023-11-15 19:08:20,809 DEBUG   SenderThread:1948 [sender.py:send():380] send: stats
+2023-11-15 19:08:24,813 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: status_report
+2023-11-15 19:08:25,754 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/config.yaml
+2023-11-15 19:08:28,179 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: resume
+2023-11-15 19:08:28,179 INFO    HandlerThread:1948 [handler.py:handle_request_resume():696] starting system metrics thread
+2023-11-15 19:08:28,179 INFO    HandlerThread:1948 [system_monitor.py:start():194] Starting system monitor
+2023-11-15 19:08:28,180 INFO    SystemMonitor:1948 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2023-11-15 19:08:28,180 INFO    SystemMonitor:1948 [interfaces.py:start():190] Started cpu monitoring
+2023-11-15 19:08:28,182 INFO    SystemMonitor:1948 [interfaces.py:start():190] Started disk monitoring
+2023-11-15 19:08:28,186 INFO    SystemMonitor:1948 [interfaces.py:start():190] Started gpu monitoring
+2023-11-15 19:08:28,186 INFO    SystemMonitor:1948 [interfaces.py:start():190] Started memory monitoring
+2023-11-15 19:08:28,187 INFO    SystemMonitor:1948 [interfaces.py:start():190] Started network monitoring
+2023-11-15 19:08:28,896 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-15 19:08:28,897 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-15 19:08:28,897 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: stop_status
+2023-11-15 19:08:29,491 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:08:29,493 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:08:29,494 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:08:29,500 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:08:29,764 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_created():271] file/dir created: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/output.log
+2023-11-15 19:08:29,765 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_created():271] file/dir created: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:08:30,536 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: status_report
+2023-11-15 19:08:30,769 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:08:30,771 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:08:30,772 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:08:30,775 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:08:31,770 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:08:32,052 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:08:32,054 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:08:32,055 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:08:32,058 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:08:32,773 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:08:33,332 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:08:33,333 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:08:33,334 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:08:33,339 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:08:33,776 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/output.log
+2023-11-15 19:08:33,777 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:08:34,623 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:08:34,625 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:08:34,625 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:08:34,630 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:08:34,779 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:08:35,632 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: status_report
+2023-11-15 19:08:35,782 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/output.log
+2023-11-15 19:08:35,907 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:08:35,908 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:08:35,909 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:08:35,913 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:08:36,785 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:08:37,201 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:08:37,203 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:08:37,203 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:08:37,208 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:08:37,789 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/output.log
+2023-11-15 19:08:37,790 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:08:38,499 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:08:38,501 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:08:38,501 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:08:38,505 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:08:38,799 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:08:39,802 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/output.log
+2023-11-15 19:08:39,806 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:08:39,807 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:08:39,808 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:08:39,813 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:08:40,805 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:08:40,814 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: status_report
+2023-11-15 19:08:41,123 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:08:41,125 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:08:41,125 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:08:41,129 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:08:41,808 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/output.log
+2023-11-15 19:08:41,809 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:08:42,444 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:08:42,445 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:08:42,446 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:08:42,450 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:08:42,811 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:08:43,765 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:08:43,768 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:08:43,768 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:08:43,784 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:08:43,814 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/output.log
+2023-11-15 19:08:43,815 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:08:43,896 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-15 19:08:43,897 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-15 19:08:43,897 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: stop_status
+2023-11-15 19:08:45,086 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:08:45,087 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:08:45,088 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:08:45,093 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:08:45,820 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/output.log
+2023-11-15 19:08:45,821 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:08:46,128 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: status_report
+2023-11-15 19:08:46,407 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:08:46,409 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:08:46,409 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:08:46,414 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:08:46,823 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:08:47,739 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:08:47,741 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:08:47,742 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:08:47,746 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:08:47,826 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/output.log
+2023-11-15 19:08:47,826 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:08:49,075 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:08:49,076 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:08:49,076 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:08:49,081 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:08:49,830 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/output.log
+2023-11-15 19:08:49,831 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:08:50,418 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:08:50,420 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:08:50,420 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:08:50,424 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:08:50,833 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:08:51,426 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: status_report
+2023-11-15 19:08:51,759 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:08:51,760 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:08:51,761 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:08:51,764 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:08:51,836 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/output.log
+2023-11-15 19:08:51,837 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:08:53,096 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:08:53,098 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:08:53,098 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:08:53,102 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:08:53,841 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/output.log
+2023-11-15 19:08:53,841 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:08:54,439 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:08:54,440 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:08:54,441 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:08:54,444 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:08:54,843 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:08:55,777 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:08:55,778 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:08:55,779 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:08:55,783 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:08:55,846 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/output.log
+2023-11-15 19:08:55,847 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:08:56,787 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: status_report
+2023-11-15 19:08:57,098 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:08:57,100 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:08:57,101 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:08:57,105 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:08:57,852 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/output.log
+2023-11-15 19:08:57,853 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:08:58,421 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:08:58,423 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:08:58,424 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:08:58,428 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:08:58,855 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:08:58,896 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-15 19:08:58,897 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-15 19:08:58,898 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: stop_status
+2023-11-15 19:08:59,737 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:08:59,739 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:08:59,739 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:08:59,743 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:08:59,858 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/output.log
+2023-11-15 19:08:59,859 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:09:01,043 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:09:01,045 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:09:01,046 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:09:01,050 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:09:01,863 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/output.log
+2023-11-15 19:09:01,864 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:09:02,052 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: status_report
+2023-11-15 19:09:02,341 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:09:02,343 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:09:02,343 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:09:02,348 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:09:02,866 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:09:03,632 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:09:03,633 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:09:03,634 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:09:03,638 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:09:03,869 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/output.log
+2023-11-15 19:09:03,870 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:09:04,919 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:09:04,920 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:09:04,921 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:09:04,925 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:09:05,875 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/output.log
+2023-11-15 19:09:05,875 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:09:06,207 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:09:06,209 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:09:06,209 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:09:06,214 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:09:06,878 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:09:07,216 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: status_report
+2023-11-15 19:09:07,489 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:09:07,491 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:09:07,491 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:09:07,509 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:09:07,882 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/output.log
+2023-11-15 19:09:07,882 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:09:08,769 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:09:08,770 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:09:08,771 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:09:08,775 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:09:08,885 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:09:09,888 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/output.log
+2023-11-15 19:09:10,040 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:09:10,041 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:09:10,042 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:09:10,047 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:09:10,891 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:09:11,313 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:09:11,315 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:09:11,316 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:09:11,319 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:09:11,894 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/output.log
+2023-11-15 19:09:11,895 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:09:12,321 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: status_report
+2023-11-15 19:09:12,584 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:09:12,589 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:09:12,590 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:09:12,594 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:09:12,897 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:09:13,848 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:09:13,850 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:09:13,851 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:09:13,856 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:09:13,897 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-15 19:09:13,897 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-15 19:09:13,898 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: stop_status
+2023-11-15 19:09:13,903 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/output.log
+2023-11-15 19:09:13,904 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:09:15,088 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:09:15,089 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:09:15,089 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:09:15,095 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:09:15,909 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/output.log
+2023-11-15 19:09:15,910 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:09:16,322 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:09:16,323 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:09:16,323 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:09:16,328 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:09:16,912 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:09:17,329 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: status_report
+2023-11-15 19:09:17,550 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:09:17,552 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:09:17,552 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:09:17,556 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:09:17,915 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/output.log
+2023-11-15 19:09:17,916 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:09:18,778 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:09:18,779 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:09:18,780 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:09:18,784 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:09:18,918 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:09:19,921 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/output.log
+2023-11-15 19:09:20,007 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:09:20,008 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:09:20,009 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:09:20,014 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:09:20,924 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:09:21,217 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:09:21,219 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:09:21,219 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:09:21,224 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:09:21,927 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/output.log
+2023-11-15 19:09:21,928 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:09:22,407 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:09:22,408 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:09:22,409 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:09:22,409 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: status_report
+2023-11-15 19:09:22,413 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:09:22,930 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:09:23,597 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:09:23,598 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:09:23,599 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:09:23,603 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:09:23,933 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/output.log
+2023-11-15 19:09:23,934 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:09:24,770 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:09:24,771 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:09:24,772 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:09:24,775 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:09:24,936 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:09:25,939 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/output.log
+2023-11-15 19:09:25,950 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:09:25,952 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:09:25,952 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:09:25,956 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:09:26,941 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:09:27,137 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:09:27,139 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:09:27,139 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:09:27,144 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:09:27,944 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/output.log
+2023-11-15 19:09:27,945 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:09:28,146 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: status_report
+2023-11-15 19:09:28,187 DEBUG   SystemMonitor:1948 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2023-11-15 19:09:28,188 DEBUG   SenderThread:1948 [sender.py:send():380] send: stats
+2023-11-15 19:09:28,326 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:09:28,327 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:09:28,328 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:09:28,333 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:09:28,897 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-15 19:09:28,897 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-15 19:09:28,898 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: stop_status
+2023-11-15 19:09:28,946 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:09:29,509 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:09:29,510 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:09:29,510 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:09:29,514 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:09:29,949 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/output.log
+2023-11-15 19:09:29,950 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:09:30,680 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:09:30,681 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:09:30,682 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:09:30,687 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:09:30,952 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:09:31,847 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:09:31,849 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:09:31,850 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:09:31,854 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:09:31,956 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/output.log
+2023-11-15 19:09:31,957 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:09:33,020 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:09:33,022 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:09:33,022 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:09:33,027 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:09:33,961 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/output.log
+2023-11-15 19:09:33,962 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:09:34,029 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: status_report
+2023-11-15 19:09:34,203 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:09:34,205 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:09:34,206 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:09:34,211 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:09:34,964 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:09:35,371 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:09:35,373 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:09:35,373 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:09:35,377 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:09:35,967 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/output.log
+2023-11-15 19:09:35,968 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:09:36,539 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:09:36,540 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:09:36,541 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:09:36,545 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:09:36,970 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:09:37,689 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:09:37,690 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:09:37,691 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:09:37,695 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:09:37,973 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/output.log
+2023-11-15 19:09:37,974 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:09:38,829 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:09:38,831 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:09:38,831 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:09:38,836 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:09:38,976 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:09:39,838 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: status_report
+2023-11-15 19:09:39,967 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:09:39,968 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:09:39,969 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:09:39,973 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:09:39,979 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/output.log
+2023-11-15 19:09:39,980 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:09:41,118 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:09:41,119 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:09:41,120 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:09:41,124 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:09:41,984 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/output.log
+2023-11-15 19:09:41,985 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:09:42,271 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:09:42,273 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:09:42,273 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:09:42,277 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:09:42,987 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:09:43,425 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:09:43,426 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:09:43,427 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:09:43,432 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:09:43,897 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-15 19:09:43,898 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-15 19:09:43,898 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: stop_status
+2023-11-15 19:09:43,990 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/output.log
+2023-11-15 19:09:43,990 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:09:44,569 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:09:44,571 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:09:44,571 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:09:44,576 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:09:44,993 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:09:45,611 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: status_report
+2023-11-15 19:09:45,712 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:09:45,713 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:09:45,714 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:09:45,719 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:09:45,996 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/output.log
+2023-11-15 19:09:45,996 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:09:46,847 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:09:46,848 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:09:46,849 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:09:46,854 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:09:46,998 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:09:47,997 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:09:47,999 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:09:47,999 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:09:48,004 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:09:48,006 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/output.log
+2023-11-15 19:09:48,007 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:09:49,143 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:09:49,144 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:09:49,145 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:09:49,149 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:09:50,011 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/output.log
+2023-11-15 19:09:50,012 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:09:50,287 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:09:50,288 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:09:50,289 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:09:50,293 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:09:51,014 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:09:51,295 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: status_report
+2023-11-15 19:09:51,419 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:09:51,421 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:09:51,421 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:09:51,425 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:09:52,017 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/output.log
+2023-11-15 19:09:52,018 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:09:52,552 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:09:52,554 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:09:52,555 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:09:52,570 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:09:53,019 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:09:53,687 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:09:53,689 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:09:53,690 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:09:53,694 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:09:54,022 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/output.log
+2023-11-15 19:09:54,022 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:09:54,820 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:09:54,822 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:09:54,822 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:09:54,827 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:09:55,026 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:09:55,951 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:09:55,953 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:09:55,953 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:09:55,959 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:09:56,029 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/output.log
+2023-11-15 19:09:56,029 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:09:56,961 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: status_report
+2023-11-15 19:09:57,090 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:09:57,092 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:09:57,092 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:09:57,097 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:09:58,035 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/output.log
+2023-11-15 19:09:58,036 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:09:58,190 DEBUG   SenderThread:1948 [sender.py:send():380] send: stats
+2023-11-15 19:09:58,236 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:09:58,237 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:09:58,238 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:09:58,242 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:09:58,897 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-15 19:09:58,897 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-15 19:09:58,898 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: stop_status
+2023-11-15 19:09:59,038 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:09:59,370 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:09:59,371 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:09:59,372 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:09:59,377 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:10:00,040 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/output.log
+2023-11-15 19:10:00,041 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:10:00,505 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:10:00,507 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:10:00,508 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:10:00,512 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:10:01,043 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:10:01,643 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:10:01,645 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:10:01,645 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:10:01,649 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:10:02,046 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/output.log
+2023-11-15 19:10:02,047 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:10:02,651 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: status_report
+2023-11-15 19:10:02,786 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:10:02,788 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:10:02,788 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:10:02,792 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:10:03,049 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:10:03,927 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:10:03,929 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:10:03,929 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:10:03,934 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:10:04,052 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/output.log
+2023-11-15 19:10:04,053 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:10:05,058 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:10:05,059 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:10:05,060 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:10:05,064 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:10:06,057 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/output.log
+2023-11-15 19:10:06,057 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:10:06,199 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:10:06,200 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:10:06,200 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:10:06,204 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:10:07,059 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:10:07,332 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:10:07,333 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:10:07,334 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:10:07,338 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:10:08,062 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/output.log
+2023-11-15 19:10:08,063 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:10:08,340 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: status_report
+2023-11-15 19:10:08,468 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:10:08,469 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:10:08,470 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:10:08,475 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:10:09,065 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:10:09,607 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:10:09,609 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:10:09,609 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:10:09,614 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:10:10,069 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/output.log
+2023-11-15 19:10:10,069 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:10:10,755 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:10:10,757 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:10:10,758 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:10:10,762 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:10:11,072 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:10:11,909 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:10:11,911 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:10:11,911 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:10:11,916 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:10:12,075 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/output.log
+2023-11-15 19:10:12,076 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:10:13,063 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:10:13,064 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:10:13,065 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:10:13,081 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:10:13,083 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:10:13,897 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-15 19:10:13,898 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-15 19:10:13,898 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: stop_status
+2023-11-15 19:10:14,086 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/output.log
+2023-11-15 19:10:14,088 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: status_report
+2023-11-15 19:10:14,199 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:10:14,200 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:10:14,201 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:10:14,206 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:10:15,089 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:10:15,349 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:10:15,351 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:10:15,351 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:10:15,356 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:10:16,091 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/output.log
+2023-11-15 19:10:16,092 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:10:16,485 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:10:16,487 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:10:16,488 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:10:16,492 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:10:17,094 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:10:17,635 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:10:17,637 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:10:17,638 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:10:17,642 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:10:18,097 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/output.log
+2023-11-15 19:10:18,098 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:10:18,776 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:10:18,777 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:10:18,778 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:10:18,783 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:10:19,100 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:10:19,785 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: status_report
+2023-11-15 19:10:19,915 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:10:19,917 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:10:19,917 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:10:19,921 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:10:20,104 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/output.log
+2023-11-15 19:10:20,104 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:10:21,060 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:10:21,062 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:10:21,062 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:10:21,068 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:10:21,106 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:10:22,109 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/output.log
+2023-11-15 19:10:22,196 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:10:22,197 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:10:22,198 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:10:22,202 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:10:23,112 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:10:23,334 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:10:23,336 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:10:23,336 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:10:23,341 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:10:24,115 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/output.log
+2023-11-15 19:10:24,116 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:10:24,481 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:10:24,483 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:10:24,484 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:10:24,488 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:10:25,118 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:10:25,490 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: status_report
+2023-11-15 19:10:25,617 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:10:25,619 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:10:25,619 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:10:25,623 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:10:26,121 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/output.log
+2023-11-15 19:10:26,122 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:10:26,753 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:10:26,755 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:10:26,756 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:10:26,760 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:10:27,124 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:10:27,901 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:10:27,902 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:10:27,903 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:10:27,907 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:10:28,128 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/output.log
+2023-11-15 19:10:28,129 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:10:28,190 DEBUG   SenderThread:1948 [sender.py:send():380] send: stats
+2023-11-15 19:10:28,897 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-15 19:10:28,898 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-15 19:10:28,898 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: stop_status
+2023-11-15 19:10:29,038 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:10:29,105 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:10:29,106 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:10:29,110 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:10:29,130 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:10:30,135 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/output.log
+2023-11-15 19:10:31,112 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: status_report
+2023-11-15 19:10:36,113 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: status_report
+2023-11-15 19:10:41,114 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: status_report
+2023-11-15 19:10:43,898 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-15 19:10:43,899 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: stop_status
+2023-11-15 19:10:43,940 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-15 19:10:47,074 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: status_report
+2023-11-15 19:10:52,075 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: status_report
+2023-11-15 19:10:57,076 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: status_report
+2023-11-15 19:10:58,191 DEBUG   SenderThread:1948 [sender.py:send():380] send: stats
+2023-11-15 19:10:58,897 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-15 19:10:58,898 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: stop_status
+2023-11-15 19:10:58,938 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-15 19:11:02,090 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: status_report
+2023-11-15 19:11:07,091 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: status_report
+2023-11-15 19:11:12,092 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: status_report
+2023-11-15 19:11:13,898 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-15 19:11:13,899 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: stop_status
+2023-11-15 19:11:13,939 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-15 19:11:18,074 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: status_report
+2023-11-15 19:11:23,075 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: status_report
+2023-11-15 19:11:28,076 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: status_report
+2023-11-15 19:11:28,193 DEBUG   SenderThread:1948 [sender.py:send():380] send: stats
+2023-11-15 19:11:28,898 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-15 19:11:28,899 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: stop_status
+2023-11-15 19:11:28,939 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-15 19:11:34,067 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: status_report
+2023-11-15 19:11:39,069 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: status_report
+2023-11-15 19:11:43,898 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-15 19:11:43,900 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: stop_status
+2023-11-15 19:11:43,939 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-15 19:11:44,115 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: status_report
+2023-11-15 19:11:49,116 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: status_report
+2023-11-15 19:11:54,118 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: status_report
+2023-11-15 19:11:58,194 DEBUG   SenderThread:1948 [sender.py:send():380] send: stats
+2023-11-15 19:11:58,898 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-15 19:11:58,899 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: stop_status
+2023-11-15 19:11:58,939 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-15 19:12:00,096 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: status_report
+2023-11-15 19:12:05,097 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: status_report
+2023-11-15 19:12:10,099 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: status_report
+2023-11-15 19:12:13,899 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-15 19:12:13,900 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: stop_status
+2023-11-15 19:12:13,939 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-15 19:12:15,113 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: status_report
+2023-11-15 19:12:20,115 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: status_report
+2023-11-15 19:12:25,116 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: status_report
+2023-11-15 19:12:28,195 DEBUG   SenderThread:1948 [sender.py:send():380] send: stats
+2023-11-15 19:12:28,899 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-15 19:12:28,900 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: stop_status
+2023-11-15 19:12:28,940 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-15 19:12:30,155 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: status_report
+2023-11-15 19:12:35,156 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: status_report
+2023-11-15 19:12:40,157 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: status_report
+2023-11-15 19:12:43,899 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-15 19:12:43,900 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: stop_status
+2023-11-15 19:12:43,940 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-15 19:12:46,119 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: status_report
+2023-11-15 19:12:51,120 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: status_report
+2023-11-15 19:12:56,121 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: status_report
+2023-11-15 19:12:58,196 DEBUG   SenderThread:1948 [sender.py:send():380] send: stats
+2023-11-15 19:12:58,899 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-15 19:12:58,900 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: stop_status
+2023-11-15 19:12:58,940 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-15 19:13:01,159 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: status_report
+2023-11-15 19:13:06,160 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: status_report
+2023-11-15 19:13:11,161 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: status_report
+2023-11-15 19:13:13,899 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-15 19:13:13,900 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: stop_status
+2023-11-15 19:13:13,940 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-15 19:13:17,113 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: status_report
+2023-11-15 19:13:22,114 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: status_report
+2023-11-15 19:13:27,115 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: status_report
+2023-11-15 19:13:28,197 DEBUG   SenderThread:1948 [sender.py:send():380] send: stats
+2023-11-15 19:13:28,900 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-15 19:13:28,901 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: stop_status
+2023-11-15 19:13:28,940 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-15 19:13:32,175 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: status_report
+2023-11-15 19:13:37,176 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: status_report
+2023-11-15 19:13:42,177 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: status_report
+2023-11-15 19:13:43,900 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-15 19:13:43,900 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: stop_status
+2023-11-15 19:13:43,940 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-15 19:13:48,116 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: status_report
+2023-11-15 19:13:53,118 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: status_report
+2023-11-15 19:13:58,119 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: status_report
+2023-11-15 19:13:58,197 DEBUG   SenderThread:1948 [sender.py:send():380] send: stats
+2023-11-15 19:13:58,900 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-15 19:13:58,901 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: stop_status
+2023-11-15 19:13:58,941 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-15 19:14:03,146 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: status_report
+2023-11-15 19:14:08,147 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: status_report
+2023-11-15 19:14:13,148 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: status_report
+2023-11-15 19:14:13,900 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-15 19:14:13,901 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: stop_status
+2023-11-15 19:14:13,942 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-15 19:14:19,103 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: status_report
+2023-11-15 19:14:24,104 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: status_report
+2023-11-15 19:14:28,199 DEBUG   SenderThread:1948 [sender.py:send():380] send: stats
+2023-11-15 19:14:28,900 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-15 19:14:28,901 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: stop_status
+2023-11-15 19:14:28,941 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-15 19:14:30,092 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: status_report
+2023-11-15 19:14:34,049 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/output.log
+2023-11-15 19:14:34,402 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:14:34,404 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:14:34,404 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:14:34,408 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:14:35,051 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:14:35,409 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: status_report
+2023-11-15 19:14:35,548 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:14:35,550 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:14:35,550 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:14:35,555 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:14:36,054 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/output.log
+2023-11-15 19:14:36,055 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:14:36,693 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:14:36,695 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:14:36,695 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:14:36,699 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:14:37,056 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:14:37,856 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:14:37,858 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:14:37,858 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:14:37,862 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:14:38,060 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/output.log
+2023-11-15 19:14:38,061 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:14:39,010 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:14:39,012 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:14:39,013 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:14:39,017 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:14:39,067 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:14:40,069 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/output.log
+2023-11-15 19:14:40,168 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:14:40,169 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:14:40,170 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:14:40,174 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:14:41,072 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:14:41,176 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: status_report
+2023-11-15 19:14:41,331 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:14:41,333 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:14:41,333 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:14:41,337 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:14:42,075 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/output.log
+2023-11-15 19:14:42,076 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:14:42,521 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:14:42,522 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:14:42,523 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:14:42,536 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:14:43,078 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:14:43,696 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:14:43,697 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:14:43,698 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:14:43,702 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:14:43,900 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-15 19:14:43,902 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-15 19:14:43,902 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: stop_status
+2023-11-15 19:14:44,081 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/output.log
+2023-11-15 19:14:44,082 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:14:44,887 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:14:44,889 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:14:44,889 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:14:44,894 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:14:45,083 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:14:46,077 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:14:46,079 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:14:46,079 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:14:46,084 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:14:46,089 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/output.log
+2023-11-15 19:14:46,090 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:14:47,086 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: status_report
+2023-11-15 19:14:47,277 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:14:47,278 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:14:47,279 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:14:47,283 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:14:48,095 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/output.log
+2023-11-15 19:14:48,095 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:14:48,472 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:14:48,473 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:14:48,473 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:14:48,477 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:14:49,097 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:14:49,673 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:14:49,675 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:14:49,675 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:14:49,680 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:14:50,100 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/output.log
+2023-11-15 19:14:50,101 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:14:50,872 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:14:50,874 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:14:50,874 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:14:50,878 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:14:51,103 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:14:52,077 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:14:52,078 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:14:52,078 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:14:52,082 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:14:52,105 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/output.log
+2023-11-15 19:14:52,106 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:14:53,084 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: status_report
+2023-11-15 19:14:53,273 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:14:53,274 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:14:53,275 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:14:53,279 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:14:54,111 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/output.log
+2023-11-15 19:14:54,112 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:14:54,464 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:14:54,466 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:14:54,466 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:14:54,470 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:14:55,114 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:14:55,649 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:14:55,651 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:14:55,651 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:14:55,656 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:14:56,117 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/output.log
+2023-11-15 19:14:56,118 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:14:56,822 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:14:56,823 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:14:56,824 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:14:56,828 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:14:57,120 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:14:57,993 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:14:57,995 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:14:57,995 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:14:58,000 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:14:58,123 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/output.log
+2023-11-15 19:14:58,124 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:14:58,199 DEBUG   SenderThread:1948 [sender.py:send():380] send: stats
+2023-11-15 19:14:58,200 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: status_report
+2023-11-15 19:14:58,900 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-15 19:14:58,901 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-15 19:14:58,901 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: stop_status
+2023-11-15 19:14:59,168 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:14:59,169 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:14:59,170 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:14:59,174 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:15:00,129 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/output.log
+2023-11-15 19:15:00,130 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:15:00,328 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:15:00,329 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:15:00,330 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:15:00,334 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:15:01,132 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:15:01,483 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:15:01,484 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:15:01,485 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:15:01,489 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:15:02,135 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/output.log
+2023-11-15 19:15:02,136 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:15:02,633 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:15:02,634 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:15:02,635 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:15:02,648 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:15:03,138 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:15:03,650 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: status_report
+2023-11-15 19:15:03,789 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:15:03,790 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:15:03,791 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:15:03,796 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:15:04,141 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/output.log
+2023-11-15 19:15:04,142 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:15:04,948 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:15:04,949 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:15:04,950 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:15:04,956 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:15:05,144 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:15:06,087 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:15:06,088 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:15:06,089 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:15:06,094 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:15:06,147 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/output.log
+2023-11-15 19:15:06,148 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:15:07,217 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:15:07,219 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:15:07,219 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:15:07,224 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:15:08,152 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/output.log
+2023-11-15 19:15:08,153 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:15:08,353 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:15:08,355 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:15:08,355 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:15:08,359 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:15:09,155 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:15:09,361 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: status_report
+2023-11-15 19:15:09,489 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:15:09,490 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:15:09,491 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:15:09,496 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:15:10,157 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/output.log
+2023-11-15 19:15:10,158 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:15:10,621 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:15:10,623 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:15:10,624 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:15:10,629 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:15:11,160 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:15:11,756 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:15:11,758 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:15:11,758 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:15:11,763 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:15:12,164 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/output.log
+2023-11-15 19:15:12,164 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:15:12,888 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:15:12,890 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:15:12,891 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:15:12,894 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:15:13,166 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:15:13,900 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-15 19:15:13,901 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-15 19:15:13,902 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: stop_status
+2023-11-15 19:15:14,014 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:15:14,119 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:15:14,119 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:15:14,123 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:15:14,169 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/output.log
+2023-11-15 19:15:14,170 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:15:15,123 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:15:15,124 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:15:15,125 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:15:15,125 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: status_report
+2023-11-15 19:15:15,129 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:15:15,172 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:15:16,174 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/output.log
+2023-11-15 19:15:16,237 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:15:16,238 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:15:16,238 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:15:16,242 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:15:17,177 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:15:17,361 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: pause
+2023-11-15 19:15:17,361 INFO    HandlerThread:1948 [handler.py:handle_request_pause():705] stopping system metrics thread
+2023-11-15 19:15:17,362 INFO    HandlerThread:1948 [system_monitor.py:finish():203] Stopping system monitor
+2023-11-15 19:15:17,362 DEBUG   SystemMonitor:1948 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2023-11-15 19:15:17,363 INFO    HandlerThread:1948 [interfaces.py:finish():202] Joined cpu monitor
+2023-11-15 19:15:17,363 DEBUG   SystemMonitor:1948 [system_monitor.py:_start():183] Publishing last batch of metrics
+2023-11-15 19:15:17,363 INFO    HandlerThread:1948 [interfaces.py:finish():202] Joined disk monitor
+2023-11-15 19:15:17,373 INFO    HandlerThread:1948 [interfaces.py:finish():202] Joined gpu monitor
+2023-11-15 19:15:17,373 INFO    HandlerThread:1948 [interfaces.py:finish():202] Joined memory monitor
+2023-11-15 19:15:17,373 INFO    HandlerThread:1948 [interfaces.py:finish():202] Joined network monitor
+2023-11-15 19:15:17,374 DEBUG   SenderThread:1948 [sender.py:send():380] send: stats
+2023-11-15 19:15:18,180 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/output.log
+2023-11-15 19:15:20,375 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: status_report
+2023-11-15 19:15:25,376 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: status_report
+2023-11-15 19:15:28,901 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-15 19:15:28,901 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-15 19:15:28,901 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: stop_status
+2023-11-15 19:15:31,138 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: status_report
+2023-11-15 19:15:36,139 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: status_report
+2023-11-15 19:15:41,140 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: status_report
+2023-11-15 19:15:43,901 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-15 19:15:43,901 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: stop_status
+2023-11-15 19:15:43,942 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-15 19:15:47,071 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: status_report
+2023-11-15 19:15:52,053 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: resume
+2023-11-15 19:15:52,053 INFO    HandlerThread:1948 [handler.py:handle_request_resume():696] starting system metrics thread
+2023-11-15 19:15:52,053 INFO    HandlerThread:1948 [system_monitor.py:start():194] Starting system monitor
+2023-11-15 19:15:52,053 INFO    SystemMonitor:1948 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2023-11-15 19:15:52,054 INFO    SystemMonitor:1948 [interfaces.py:start():190] Started cpu monitoring
+2023-11-15 19:15:52,055 INFO    SystemMonitor:1948 [interfaces.py:start():190] Started disk monitoring
+2023-11-15 19:15:52,056 INFO    SystemMonitor:1948 [interfaces.py:start():190] Started gpu monitoring
+2023-11-15 19:15:52,056 INFO    SystemMonitor:1948 [interfaces.py:start():190] Started memory monitoring
+2023-11-15 19:15:52,057 INFO    SystemMonitor:1948 [interfaces.py:start():190] Started network monitoring
+2023-11-15 19:15:52,072 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: status_report
+2023-11-15 19:15:52,094 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: pause
+2023-11-15 19:15:52,094 INFO    HandlerThread:1948 [handler.py:handle_request_pause():705] stopping system metrics thread
+2023-11-15 19:15:52,094 INFO    HandlerThread:1948 [system_monitor.py:finish():203] Stopping system monitor
+2023-11-15 19:15:52,094 DEBUG   SystemMonitor:1948 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2023-11-15 19:15:52,095 DEBUG   SystemMonitor:1948 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2023-11-15 19:15:52,095 INFO    HandlerThread:1948 [interfaces.py:finish():202] Joined cpu monitor
+2023-11-15 19:15:52,095 DEBUG   SystemMonitor:1948 [system_monitor.py:_start():183] Publishing last batch of metrics
+2023-11-15 19:15:52,095 INFO    HandlerThread:1948 [interfaces.py:finish():202] Joined disk monitor
+2023-11-15 19:15:52,104 INFO    HandlerThread:1948 [interfaces.py:finish():202] Joined gpu monitor
+2023-11-15 19:15:52,105 INFO    HandlerThread:1948 [interfaces.py:finish():202] Joined memory monitor
+2023-11-15 19:15:52,105 INFO    HandlerThread:1948 [interfaces.py:finish():202] Joined network monitor
+2023-11-15 19:15:52,106 DEBUG   SenderThread:1948 [sender.py:send():380] send: stats
+2023-11-15 19:15:57,107 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: status_report
+2023-11-15 19:15:58,901 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-15 19:15:58,901 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-15 19:15:58,902 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: stop_status
+2023-11-15 19:16:00,317 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: resume
+2023-11-15 19:16:00,317 INFO    HandlerThread:1948 [handler.py:handle_request_resume():696] starting system metrics thread
+2023-11-15 19:16:00,318 INFO    HandlerThread:1948 [system_monitor.py:start():194] Starting system monitor
+2023-11-15 19:16:00,318 INFO    SystemMonitor:1948 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2023-11-15 19:16:00,318 INFO    SystemMonitor:1948 [interfaces.py:start():190] Started cpu monitoring
+2023-11-15 19:16:00,319 INFO    SystemMonitor:1948 [interfaces.py:start():190] Started disk monitoring
+2023-11-15 19:16:00,320 INFO    SystemMonitor:1948 [interfaces.py:start():190] Started gpu monitoring
+2023-11-15 19:16:00,321 INFO    SystemMonitor:1948 [interfaces.py:start():190] Started memory monitoring
+2023-11-15 19:16:00,321 INFO    SystemMonitor:1948 [interfaces.py:start():190] Started network monitoring
+2023-11-15 19:16:01,582 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:16:01,584 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:16:01,584 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:16:01,588 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:16:02,291 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:16:02,590 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: status_report
+2023-11-15 19:16:02,800 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-15 19:16:02,802 DEBUG   SenderThread:1948 [sender.py:send():380] send: history
+2023-11-15 19:16:02,802 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: summary_record
+2023-11-15 19:16:02,807 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:16:03,294 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:16:04,029 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: pause
+2023-11-15 19:16:04,030 INFO    HandlerThread:1948 [handler.py:handle_request_pause():705] stopping system metrics thread
+2023-11-15 19:16:04,030 INFO    HandlerThread:1948 [system_monitor.py:finish():203] Stopping system monitor
+2023-11-15 19:16:04,030 DEBUG   SystemMonitor:1948 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2023-11-15 19:16:04,031 INFO    HandlerThread:1948 [interfaces.py:finish():202] Joined cpu monitor
+2023-11-15 19:16:04,031 DEBUG   SystemMonitor:1948 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2023-11-15 19:16:04,031 INFO    HandlerThread:1948 [interfaces.py:finish():202] Joined disk monitor
+2023-11-15 19:16:04,032 DEBUG   SystemMonitor:1948 [system_monitor.py:_start():183] Publishing last batch of metrics
+2023-11-15 19:16:04,039 INFO    HandlerThread:1948 [interfaces.py:finish():202] Joined gpu monitor
+2023-11-15 19:16:04,040 INFO    HandlerThread:1948 [interfaces.py:finish():202] Joined memory monitor
+2023-11-15 19:16:04,040 INFO    HandlerThread:1948 [interfaces.py:finish():202] Joined network monitor
+2023-11-15 19:16:04,040 DEBUG   SenderThread:1948 [sender.py:send():380] send: stats
+2023-11-15 19:16:04,297 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/output.log
+2023-11-15 19:16:08,042 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: status_report
+2023-11-15 19:16:10,798 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: resume
+2023-11-15 19:16:10,798 INFO    HandlerThread:1948 [handler.py:handle_request_resume():696] starting system metrics thread
+2023-11-15 19:16:10,798 INFO    HandlerThread:1948 [system_monitor.py:start():194] Starting system monitor
+2023-11-15 19:16:10,799 INFO    SystemMonitor:1948 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2023-11-15 19:16:10,800 DEBUG   SenderThread:1948 [sender.py:send():380] send: telemetry
+2023-11-15 19:16:10,800 INFO    SystemMonitor:1948 [interfaces.py:start():190] Started cpu monitoring
+2023-11-15 19:16:10,801 INFO    SystemMonitor:1948 [interfaces.py:start():190] Started disk monitoring
+2023-11-15 19:16:10,802 INFO    SystemMonitor:1948 [interfaces.py:start():190] Started gpu monitoring
+2023-11-15 19:16:10,803 INFO    SystemMonitor:1948 [interfaces.py:start():190] Started memory monitoring
+2023-11-15 19:16:10,803 DEBUG   SenderThread:1948 [sender.py:send():380] send: exit
+2023-11-15 19:16:10,803 INFO    SystemMonitor:1948 [interfaces.py:start():190] Started network monitoring
+2023-11-15 19:16:10,804 INFO    SenderThread:1948 [sender.py:send_exit():585] handling exit code: 0
+2023-11-15 19:16:10,805 INFO    SenderThread:1948 [sender.py:send_exit():587] handling runtime: 413
+2023-11-15 19:16:10,809 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:16:10,810 INFO    SenderThread:1948 [sender.py:send_exit():593] send defer
+2023-11-15 19:16:10,810 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: defer
+2023-11-15 19:16:10,810 INFO    HandlerThread:1948 [handler.py:handle_request_defer():172] handle defer: 0
+2023-11-15 19:16:10,810 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: defer
+2023-11-15 19:16:10,811 INFO    SenderThread:1948 [sender.py:send_request_defer():609] handle sender defer: 0
+2023-11-15 19:16:10,811 INFO    SenderThread:1948 [sender.py:transition_state():613] send defer: 1
+2023-11-15 19:16:10,811 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: defer
+2023-11-15 19:16:10,811 INFO    HandlerThread:1948 [handler.py:handle_request_defer():172] handle defer: 1
+2023-11-15 19:16:10,811 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: defer
+2023-11-15 19:16:10,811 INFO    SenderThread:1948 [sender.py:send_request_defer():609] handle sender defer: 1
+2023-11-15 19:16:10,811 INFO    SenderThread:1948 [sender.py:transition_state():613] send defer: 2
+2023-11-15 19:16:10,812 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: defer
+2023-11-15 19:16:10,812 INFO    HandlerThread:1948 [handler.py:handle_request_defer():172] handle defer: 2
+2023-11-15 19:16:10,812 INFO    HandlerThread:1948 [system_monitor.py:finish():203] Stopping system monitor
+2023-11-15 19:16:10,812 DEBUG   SystemMonitor:1948 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2023-11-15 19:16:10,813 DEBUG   SystemMonitor:1948 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2023-11-15 19:16:10,813 INFO    HandlerThread:1948 [interfaces.py:finish():202] Joined cpu monitor
+2023-11-15 19:16:10,813 DEBUG   SystemMonitor:1948 [system_monitor.py:_start():183] Publishing last batch of metrics
+2023-11-15 19:16:10,813 INFO    HandlerThread:1948 [interfaces.py:finish():202] Joined disk monitor
+2023-11-15 19:16:10,819 INFO    HandlerThread:1948 [interfaces.py:finish():202] Joined gpu monitor
+2023-11-15 19:16:10,820 INFO    HandlerThread:1948 [interfaces.py:finish():202] Joined memory monitor
+2023-11-15 19:16:10,820 INFO    HandlerThread:1948 [interfaces.py:finish():202] Joined network monitor
+2023-11-15 19:16:10,820 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: defer
+2023-11-15 19:16:10,821 INFO    SenderThread:1948 [sender.py:send_request_defer():609] handle sender defer: 2
+2023-11-15 19:16:10,821 INFO    SenderThread:1948 [sender.py:transition_state():613] send defer: 3
+2023-11-15 19:16:10,821 DEBUG   SenderThread:1948 [sender.py:send():380] send: stats
+2023-11-15 19:16:10,821 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: defer
+2023-11-15 19:16:10,821 INFO    HandlerThread:1948 [handler.py:handle_request_defer():172] handle defer: 3
+2023-11-15 19:16:10,822 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: defer
+2023-11-15 19:16:10,822 INFO    SenderThread:1948 [sender.py:send_request_defer():609] handle sender defer: 3
+2023-11-15 19:16:10,822 INFO    SenderThread:1948 [sender.py:transition_state():613] send defer: 4
+2023-11-15 19:16:10,822 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: defer
+2023-11-15 19:16:10,822 INFO    HandlerThread:1948 [handler.py:handle_request_defer():172] handle defer: 4
+2023-11-15 19:16:10,823 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: defer
+2023-11-15 19:16:10,823 INFO    SenderThread:1948 [sender.py:send_request_defer():609] handle sender defer: 4
+2023-11-15 19:16:10,823 INFO    SenderThread:1948 [sender.py:transition_state():613] send defer: 5
+2023-11-15 19:16:10,823 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: defer
+2023-11-15 19:16:10,823 INFO    HandlerThread:1948 [handler.py:handle_request_defer():172] handle defer: 5
+2023-11-15 19:16:10,823 DEBUG   SenderThread:1948 [sender.py:send():380] send: summary
+2023-11-15 19:16:10,826 INFO    SenderThread:1948 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-15 19:16:10,827 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: defer
+2023-11-15 19:16:10,827 INFO    SenderThread:1948 [sender.py:send_request_defer():609] handle sender defer: 5
+2023-11-15 19:16:10,827 INFO    SenderThread:1948 [sender.py:transition_state():613] send defer: 6
+2023-11-15 19:16:10,827 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: defer
+2023-11-15 19:16:10,827 INFO    HandlerThread:1948 [handler.py:handle_request_defer():172] handle defer: 6
+2023-11-15 19:16:10,828 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: defer
+2023-11-15 19:16:10,828 INFO    SenderThread:1948 [sender.py:send_request_defer():609] handle sender defer: 6
+2023-11-15 19:16:10,832 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: status_report
+2023-11-15 19:16:11,315 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:16:11,803 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: poll_exit
+2023-11-15 19:16:12,338 INFO    SenderThread:1948 [sender.py:transition_state():613] send defer: 7
+2023-11-15 19:16:12,338 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: poll_exit
+2023-11-15 19:16:12,338 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: defer
+2023-11-15 19:16:12,339 INFO    HandlerThread:1948 [handler.py:handle_request_defer():172] handle defer: 7
+2023-11-15 19:16:12,339 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: defer
+2023-11-15 19:16:12,339 INFO    SenderThread:1948 [sender.py:send_request_defer():609] handle sender defer: 7
+2023-11-15 19:16:12,804 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: poll_exit
+2023-11-15 19:16:13,320 INFO    Thread-49 :1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/config.yaml
+2023-11-15 19:16:14,086 INFO    SenderThread:1948 [sender.py:transition_state():613] send defer: 8
+2023-11-15 19:16:14,087 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: poll_exit
+2023-11-15 19:16:14,087 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: defer
+2023-11-15 19:16:14,088 INFO    HandlerThread:1948 [handler.py:handle_request_defer():172] handle defer: 8
+2023-11-15 19:16:14,088 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: defer
+2023-11-15 19:16:14,088 INFO    SenderThread:1948 [sender.py:send_request_defer():609] handle sender defer: 8
+2023-11-15 19:16:14,088 INFO    SenderThread:1948 [job_builder.py:build():298] Attempting to build job artifact
+2023-11-15 19:16:14,090 INFO    SenderThread:1948 [job_builder.py:_get_source_type():439] no source found
+2023-11-15 19:16:14,090 INFO    SenderThread:1948 [sender.py:transition_state():613] send defer: 9
+2023-11-15 19:16:14,090 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: defer
+2023-11-15 19:16:14,090 INFO    HandlerThread:1948 [handler.py:handle_request_defer():172] handle defer: 9
+2023-11-15 19:16:14,091 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: defer
+2023-11-15 19:16:14,091 INFO    SenderThread:1948 [sender.py:send_request_defer():609] handle sender defer: 9
+2023-11-15 19:16:14,091 INFO    SenderThread:1948 [dir_watcher.py:finish():358] shutting down directory watcher
+2023-11-15 19:16:14,324 INFO    SenderThread:1948 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/output.log
+2023-11-15 19:16:14,324 INFO    SenderThread:1948 [dir_watcher.py:finish():388] scan: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files
+2023-11-15 19:16:14,325 INFO    SenderThread:1948 [dir_watcher.py:finish():402] scan save: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/config.yaml config.yaml
+2023-11-15 19:16:14,326 INFO    SenderThread:1948 [dir_watcher.py:finish():402] scan save: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/requirements.txt requirements.txt
+2023-11-15 19:16:14,329 INFO    SenderThread:1948 [dir_watcher.py:finish():402] scan save: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-metadata.json wandb-metadata.json
+2023-11-15 19:16:14,329 INFO    SenderThread:1948 [dir_watcher.py:finish():402] scan save: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json wandb-summary.json
+2023-11-15 19:16:14,332 INFO    SenderThread:1948 [dir_watcher.py:finish():402] scan save: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/output.log output.log
+2023-11-15 19:16:14,335 INFO    SenderThread:1948 [sender.py:transition_state():613] send defer: 10
+2023-11-15 19:16:14,336 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: defer
+2023-11-15 19:16:14,338 INFO    HandlerThread:1948 [handler.py:handle_request_defer():172] handle defer: 10
+2023-11-15 19:16:14,338 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: defer
+2023-11-15 19:16:14,338 INFO    SenderThread:1948 [sender.py:send_request_defer():609] handle sender defer: 10
+2023-11-15 19:16:14,338 INFO    SenderThread:1948 [file_pusher.py:finish():175] shutting down file pusher
+2023-11-15 19:16:14,807 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: poll_exit
+2023-11-15 19:16:14,808 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: poll_exit
+2023-11-15 19:16:14,896 INFO    wandb-upload_1:1948 [upload_job.py:push():131] Uploaded file /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/requirements.txt
+2023-11-15 19:16:14,903 INFO    wandb-upload_0:1948 [upload_job.py:push():131] Uploaded file /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/config.yaml
+2023-11-15 19:16:15,097 INFO    wandb-upload_3:1948 [upload_job.py:push():131] Uploaded file /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/output.log
+2023-11-15 19:16:15,097 INFO    wandb-upload_2:1948 [upload_job.py:push():131] Uploaded file /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/files/wandb-summary.json
+2023-11-15 19:16:15,298 INFO    Thread-48 (_thread_body):1948 [sender.py:transition_state():613] send defer: 11
+2023-11-15 19:16:15,298 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: defer
+2023-11-15 19:16:15,299 INFO    HandlerThread:1948 [handler.py:handle_request_defer():172] handle defer: 11
+2023-11-15 19:16:15,299 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: defer
+2023-11-15 19:16:15,299 INFO    SenderThread:1948 [sender.py:send_request_defer():609] handle sender defer: 11
+2023-11-15 19:16:15,299 INFO    SenderThread:1948 [file_pusher.py:join():181] waiting for file pusher
+2023-11-15 19:16:15,299 INFO    SenderThread:1948 [sender.py:transition_state():613] send defer: 12
+2023-11-15 19:16:15,300 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: defer
+2023-11-15 19:16:15,300 INFO    HandlerThread:1948 [handler.py:handle_request_defer():172] handle defer: 12
+2023-11-15 19:16:15,300 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: defer
+2023-11-15 19:16:15,300 INFO    SenderThread:1948 [sender.py:send_request_defer():609] handle sender defer: 12
+2023-11-15 19:16:15,300 INFO    SenderThread:1948 [file_stream.py:finish():595] file stream finish called
+2023-11-15 19:16:15,808 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: poll_exit
+2023-11-15 19:16:15,844 INFO    SenderThread:1948 [file_stream.py:finish():599] file stream finish is done
+2023-11-15 19:16:15,845 INFO    SenderThread:1948 [sender.py:transition_state():613] send defer: 13
+2023-11-15 19:16:15,845 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: poll_exit
+2023-11-15 19:16:15,845 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: defer
+2023-11-15 19:16:15,846 INFO    HandlerThread:1948 [handler.py:handle_request_defer():172] handle defer: 13
+2023-11-15 19:16:15,846 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: defer
+2023-11-15 19:16:15,846 INFO    SenderThread:1948 [sender.py:send_request_defer():609] handle sender defer: 13
+2023-11-15 19:16:15,846 INFO    SenderThread:1948 [sender.py:transition_state():613] send defer: 14
+2023-11-15 19:16:15,847 DEBUG   SenderThread:1948 [sender.py:send():380] send: final
+2023-11-15 19:16:15,847 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: defer
+2023-11-15 19:16:15,847 DEBUG   SenderThread:1948 [sender.py:send():380] send: footer
+2023-11-15 19:16:15,847 INFO    HandlerThread:1948 [handler.py:handle_request_defer():172] handle defer: 14
+2023-11-15 19:16:15,847 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: defer
+2023-11-15 19:16:15,847 INFO    SenderThread:1948 [sender.py:send_request_defer():609] handle sender defer: 14
+2023-11-15 19:16:15,848 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: poll_exit
+2023-11-15 19:16:15,849 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: poll_exit
+2023-11-15 19:16:15,850 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-15 19:16:15,851 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: server_info
+2023-11-15 19:16:15,852 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: server_info
+2023-11-15 19:16:15,892 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: get_summary
+2023-11-15 19:16:15,892 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: sampled_history
+2023-11-15 19:16:15,893 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: job_info
+2023-11-15 19:16:15,987 DEBUG   SenderThread:1948 [sender.py:send_request():407] send_request: job_info
+2023-11-15 19:16:15,988 DEBUG   HandlerThread:1948 [handler.py:handle_request():146] handle_request: shutdown
+2023-11-15 19:16:15,988 INFO    HandlerThread:1948 [handler.py:finish():866] shutting down handler
+2023-11-15 19:16:16,894 INFO    WriterThread:1948 [datastore.py:close():294] close: /content/drive/.shortcut-targets-by-id/1APhA-_jBAkN_ptbdCyRPHmOMq5cDOR9a/project5/wandb/run-20231115_190752-3442b3n3/run-3442b3n3.wandb
+2023-11-15 19:16:16,988 INFO    SenderThread:1948 [sender.py:finish():1536] shutting down sender
+2023-11-15 19:16:16,988 INFO    SenderThread:1948 [file_pusher.py:finish():175] shutting down file pusher
+2023-11-15 19:16:16,988 INFO    SenderThread:1948 [file_pusher.py:join():181] waiting for file pusher
